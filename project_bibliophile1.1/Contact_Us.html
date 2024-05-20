@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="css\style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+
+      /* Body styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #555;
+  background-color: #f7f7f7;
+}
+
+
+
+
+/* Main content styles */
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.row {
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 0;
+  box-shadow: 0px -2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+
+
+
+
+/* Media queries */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+}
+
+    </style>
+    
+    <link rel="icon" type="image/x-icon" href="bibliophile-sm-lgo.png">
+    <title>bibliophile- Contact_Us</title>
+  </head>
+  <body>
+    
+    
+    <!-- *****************navbar *******************-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navcolour">
+        <div class="container-fluid">
+
+            <nav class="navbar bg-body-tertiary">
+                <div class="container">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="photos\full-logo.png" alt="Bibliophile" width="120" height="30">
+                  </a>
+                </div>
+              </nav>
+
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+                  <img src="photos\nav-tog-img.png" alt="navbar-toggler-icon" height="30px">
+                
+            </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="donate.html">Donate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="all-books.html">All Books</a>
+              </li>
+
+
+
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Help
+                </a>
+                <ul class="dropdown-menu bg-primary" > 
+                
+                  <li><a class="dropdown-item" href="About_Us.html">About Us</a></li>
+                  <li><a class="dropdown-item" href="Contact_Us.html">Contact Us</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="help.html">help</a></li>
+                </ul>
+              </li>
+
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+            </ul>
+            
+
+
+<!-- *************************login and signup  ************************* -->
+            <div class="col-md-3 text-end">
+              <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign-up</button>
+            </div>
+            
+            <!-- Login Modal -->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Login Form -->
+                    <form>
+                      <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="loginPassword" required>
+                      </div>
+                      <button type="submit" class="btn btn-primary">login</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Signup Modal -->
+            <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign-up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <!-- Signup Form -->
+                    <form>
+                      <div class="mb-3">
+                        <label for="signupName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="signupName" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="signupEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="signupPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="signupPassword" required>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Signup</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+           <!-- *************************login and signup  ************************* --> 
+
+
+
+
+
+
+           <div style="margin: 10px;">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form></div>
+          </div>
+        </div>
+      </nav>
+      
+    
+    <!-- *****************navbar *******************-->
+
+
+
+
+
+    
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Get in touch</h2>
+      
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h4 class="text-center mb-3">Tridib Kr. Roy</h4>
+          <div class="text-center mb-3">
+            <a href="https://github.com/TridibKumarRoy" target="_blank"><i class="fab fa-github icon"></i>GitHub</a>
+          </div>
+          <div class="text-center mb-3">
+            <a href="https://www.linkedin.com/in/tridib-roy-3670a0223/ " target="_blank"><i class="fab fa-linkedin icon"></i>LinkedIn</a>
+          </div>
+          <div class="text-center">
+            <a href="mailto:tridibroy3012004@gmail.com"><i class="fas fa-envelope icon"></i>Email</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h4 class="text-center mb-3">Vicky Bhattacharya</h4>
+          <div class="text-center mb-3">
+            <a href="https://github.com/venusau" target="_blank"><i class="fab fa-github icon"></i>GitHub</a>
+          </div>
+          <div class="text-center mb-3">
+            <a href="https://www.linkedin.com/in/vicky-bhattacharya-98535725b/" target="_blank"><i class="fab fa-linkedin icon"></i>LinkedIn</a>
+          </div>
+          <div class="text-center">
+            <a href="mailto:vickybhattacharya19@gmail.com"><i class="fas fa-envelope icon"></i>Email</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h4 class="text-center mb-3">Saptarsi Das</h4>
+          <div class="text-center mb-3">
+            <a href="https://github.com/sapt1511" target="_blank"><i class="fab fa-github icon"></i>GitHub</a>
+          </div>
+          <div class="text-center mb-3">
+            <a href="https://www.linkedin.com/in/saptarsi-das-888068223/" target="_blank"><i class="fab fa-linkedin icon"></i>LinkedIn</a>
+          </div>
+          <div class="text-center">
+            <a href="mailto:123saptarsi@gmail.com"><i class="fas fa-envelope icon"></i>Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 offset-md-2 mb-4">
+          <h4 class="text-center mb-3">Debarati</h4>
+          <div class="text-center mb-3">
+          <a href="https://github.com/Debarati9874" target="_blank"><i class="fab fa-github icon"></i>GitHub</a>
+          </div>
+          <div class="text-center mb-3">
+          <a href="https://www.linkedin.com/in/debarati-podder-728a12229/ " target="_blank"><i class="fab fa-linkedin icon"></i>LinkedIn</a>
+          </div>
+          <div class="text-center">
+          <a href="mailto:debaratipoddar143@gmail.com"><i class="fas fa-envelope icon"></i>Email</a>
+          </div>
+          </div>
+          <div class="col-md-4 mb-4">
+          <h4 class="text-center mb-3">Rupam</h4>
+          <div class="text-center mb-3">
+          <a href="https://github.com/rupamchak2003" target="_blank"><i class="fab fa-github icon"></i>GitHub</a>
+          </div>
+          <div class="text-center mb-3">
+          <a href="https://www.linkedin.com/in/rupam-chakraborty-12a443257/" target="_blank"><i class="fab fa-linkedin icon"></i>LinkedIn</a>
+          </div>
+          <div class="text-center">
+          <a href="mailto:chakrabortyrupam615@gmail.com"><i class="fas fa-envelope icon"></i>Email</a>
+          </div>
+          </div>
+          </div>
+          </div>
+
+
+
+
+
+
+
+
+<!--   **************************FOOTER **************************  -->
+
+<footer class="bg-dark py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5 class="mb-3 text-light">Mail Us:</h5>
+        <hr class="bg-light">
+        <ul class="list-unstyled text-light">
+          <li><a href="mailto:tridibroy3012004@gmail.com" class="text-light">Tridib Kr. Roy - tridibroy3012004@gmail.com</a></li>
+          <li><a href="mailto:vickybhattacharya19@gmail.com" class="text-light">Vicky Bhattacharya - vickybhattacharya19@gmail.com</a></li>
+          <li><a href="mailto:123saptarsi@gmail.com" class="text-light">Saptarsi Das - 123saptarsi@gmail.com</a></li>
+          <li><a href="mailto:debaratipoddar143@gmail.com" class="text-light">Debarati - debaratipoddar143@gmail.com</a></li>
+          <li><a href="mailto:chakrabortytapas615@gmail.com" class="text-light">Rupam - chakrabortytapas615@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h5 class="mb-3 text-light">About Bibliophile</h5>
+        <hr class="bg-light">
+        <p class="mb-0 text-light">Bibliophile is an online book donating/collecting platform, where every student of a specific university college can donate or collect the book they need. This makes it easy for each student to collect any book without much hurdle and saves their essential money by borrowing their senior's books if they are willing to.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-3 text-center">
+    <hr class="bg-light">
+    <p class="mb-0 text-light">&copy; 2023 Bibliophile. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<!-- *******************************footer************************** -->
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    
+
+
+    <script src="js\script.js"></script>
+
+
+
+
+  </body>
+</html>
